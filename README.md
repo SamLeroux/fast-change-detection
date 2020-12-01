@@ -13,7 +13,7 @@ Add your pre-treined model and label map into the 'graphs' folder.
 Add the images you want to label into the images folder
 Change the xml path in generate_xml.py to put your own local path.
 
-## data file structure:
+# data folder structure:
     .
     data
     ├── custom_dataset
