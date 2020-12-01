@@ -13,6 +13,22 @@ Add your pre-treined model and label map into the 'graphs' folder.
 Add the images you want to label into the images folder
 Change the xml path in generate_xml.py to put your own local path.
 
+data file structure:
+    data
+    ├── custom_dataset
+    │  ├── frames # unprocessed data 
+    │  ├── frames_after_background_removal # data after background removal           
+    │  ├── change           
+    │  ├── same                  
+    │  ├── 0 # folder names denoting the number of detections in the frame                
+    │  ├── 1        
+    │  ├── 2                   
+    │  ├── 3                   
+    │  ├── 4                   
+    │  ├── 5                   
+    │  ├── 6                   
+    ...
+
 - Run: background_removal.py to prepare the frames for detection
 - Run: python3 detection/detection_images.py (to perform detection)
 - Run:change_same_distributer.py to distribute data to change and same
