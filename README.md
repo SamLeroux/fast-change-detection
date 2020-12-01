@@ -31,7 +31,8 @@ Change the xml path in generate_xml.py to put your own local path.
     ...
 
 - Run: background_removal.py to prepare the frames for detection
-- Run: python3 detection/detection_images.py (to perform detection)
+- Run: detection/detection_images.py (to perform detection)
+- Run: create_zero_folder.py to complete the '0' folder. detection_images.py adds images with detections excluding cars, van and trucks only.
 - Run:change_same_distributer.py to distribute data to change and same
 
 ## Download:
